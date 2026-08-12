@@ -10,7 +10,7 @@
     padding: 20px;
     align-items: center;
     display: flex;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid rgb(141, 129, 129);
     margin: 0 auto;
     justify-content: space-between;
 }
@@ -19,4 +19,19 @@
 }
 .links{
     margin-left: auto;
+}
+.links a{
+    text-decoration: none;
+    padding: 20px;
+    margin-left: 20px;
+    font-size: 20px;
+    color: white;
+}
+.links a:hover{
+    color: red;
+    transition: 0.3ease;
+    transition: transform 0.5s ease;
+}
+.content{
+    text-align: center;
 }
