@@ -6,10 +6,17 @@
     padding: 0;
 }
 .navbar{
+    background-image: linear-gradient(to top, red 0%, black 100%);
     padding: 20px;
     align-items: center;
     display: flex;
-    max-width: 600px;
     border-bottom: 1px solid black;
     margin: 0 auto;
+    justify-content: space-between;
+}
+.navbar h1{
+    color: red;
+}
+.links{
+    margin-left: auto;
 }

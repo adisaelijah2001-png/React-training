@@ -1,6 +1,6 @@
 const Navbar = () => {
-    return ( 
-        <nav className="navber">
+    return (
+        <nav className="navbar">
             <h1>The new project</h1>
             <div className="links">
                 <a href="#">Home</a>
@@ -8,7 +8,7 @@ const Navbar = () => {
                 <a href="#">Blog</a>
             </div>
         </nav>
-     );
+    );
 }
- 
+
 export default Navbar;
