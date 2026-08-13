@@ -1,4 +1,3 @@
-import reactImg from './assets/react.svg'
 const navItems = [
   { key: 'home', label: 'Home' },
   { key: 'about', label: 'About' },
@@ -9,7 +8,7 @@ const Navbar = ({ activePage, onNavigate }) => {
   return (
     <header className="navbar">
       <div className="brand">
-        <span className="brand-title"> <img src="{reactImg}" alt="" />Eliad</span>
+        <span className="brand-title">Eliad</span>
         <span className="brand-subtitle">React project</span>
       </div>
       <nav className="nav-links" aria-label="Primary navigation">
