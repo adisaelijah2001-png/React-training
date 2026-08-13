@@ -6,7 +6,7 @@ const Home = () => {
   const handleClick = () => {
     setClicks((current) => current + 1)
   }
-
+  
   return (
     <section className="page-card home-page">
       <div className="hero-copy">
