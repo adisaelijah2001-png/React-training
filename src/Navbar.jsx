@@ -9,7 +9,7 @@ const Navbar = ({ activePage, onNavigate }) => {
     <header className="navbar">
       <div className="brand">
         <span className="brand-title">Eliad</span>
-        <span className="brand-subtitle">React project</span>
+        {/* <span className="brand-subtitle">React project</span> */}
       </div>
       <nav className="nav-links" aria-label="Primary navigation">
         {navItems.map((item) => (
