@@ -1,32 +1,51 @@
-const posts = [
+const projects = [
   {
-    title: 'Getting started with project structure',
-    description: 'Learn how this app separates pages, navigation, and shared styles.',
-    date: 'Aug 2026',
+    title: 'Portfolio Landing Page',
+    description:
+      'A responsive portfolio front page built with React components, showcasing projects and contact details.',
+    tech: 'React, CSS, Vite',
+    demo: '#',
+    repo: '#',
   },
   {
-    title: 'Interactive React state',
-    description: 'A simple click counter shows how state updates can trigger view changes.',
-    date: 'Aug 2026',
+    title: 'Todo App',
+    description:
+      'A small todo application demonstrating local state, controlled inputs, and persistence using localStorage.',
+    tech: 'React, JavaScript',
+    demo: '#',
+    repo: '#',
   },
   {
-    title: 'Next steps for this app',
-    description: 'Add routing, API data fetching, or tests to continue improving the project.',
-    date: 'Aug 2026',
+    title: 'UI Component Kit',
+    description:
+      'Reusable, accessible UI components (buttons, cards, forms) built as practice for consistent design language.',
+    tech: 'HTML, CSS, JS',
+    demo: '#',
+    repo: '#',
   },
 ]
 
 const Blog = () => {
   return (
-    <section className="page-card">
-      <h2>Blog previews</h2>
-      <p>These cards show how you can structure preview content for a blog or news section.</p>
+    <section className="page-card" id="projects">
+      <h2>Selected projects</h2>
+      <p>Below are a few examples of projects I’ve built while learning and practicing.</p>
       <div className="blog-grid">
-        {posts.map((post) => (
-          <article key={post.title} className="blog-card">
-            <h3>{post.title}</h3>
-            <p>{post.description}</p>
-            <span>{post.date}</span>
+        {projects.map((p) => (
+          <article key={p.title} className="blog-card">
+            <h3>{p.title}</h3>
+            <p>{p.description}</p>
+            <div style={{ display: 'flex', gap: 8, marginTop: 12 }}>
+              <a className="primary-btn" href={p.demo} target="_blank" rel="noopener noreferrer">
+                Demo
+              </a>
+              <a className="nav-link" href={p.repo} target="_blank" rel="noopener noreferrer">
+                Code
+              </a>
+            </div>
+            <div style={{ marginTop: 12 }}>
+              <span>{p.tech}</span>
+            </div>
           </article>
         ))}
       </div>

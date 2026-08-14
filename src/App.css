@@ -73,12 +73,30 @@ img {
   display: flex;
   gap: 14px;
   flex-wrap: wrap;
+
+.brand-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.react-logo {
+  width: 36px;
+  height: 36px;
+  display: inline-block;
+}
+
+.react-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
 }
 
 .nav-link {
   border: none;
   background: transparent;
-  color: #cbd5e1;
+  color: #cacfd6;
   padding: 10px 16px;
   border-radius: 999px;
   transition: background 0.2s ease, color 0.2s ease;

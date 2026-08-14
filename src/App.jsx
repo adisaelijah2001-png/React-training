@@ -11,7 +11,7 @@ const pages = {
   about: About,
   blog: Blog,
 }
-
+ 
 function App() {
   const [activePage, setActivePage] = useState('home')
   const Page = pages[activePage]
@@ -20,7 +20,7 @@ function App() {
     <div className="app-shell">
       <Navbar activePage={activePage} onNavigate={setActivePage} />
       <main className="main-content">
-        <Page />
+        <Page onNavigate={setActivePage} />
       </main>
       <Footer />
     </div>

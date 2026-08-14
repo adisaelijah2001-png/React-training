@@ -1,34 +1,31 @@
 import { useState } from 'react'
 import heroImg from './assets/hero.png'
 
-const Home = () => {
+const Home = ({ onNavigate }) => {
   const [clicks, setClicks] = useState(0)
-  const handleClick = () => {
-    setClicks((current) => current + 1)
-  }
-  
+  const handleClick = () => setClicks((c) => c + 1)
+
   return (
     <section className="page-card home-page">
       <div className="hero-copy">
-        <span className="eyebrow">React training project</span>
-        <h1>Build a polished React app with component navigation.</h1>
+        <span className="eyebrow">Adisa Elijah Abisola</span>
+        <h1>Front-end developer — HTML, JavaScript, CSS, React</h1>
         <p>
-          This project demonstrates reusable components, page switching, and
-          interactive UI with React state.
+          I graduated from Ekiti State University with a Second Class Upper in
+          Computer Science. I build responsive interfaces and interactive web
+          applications using React and modern tooling.
         </p>
         <div className="hero-actions">
-          <button className="primary-btn" onClick={handleClick}>
-            Click me {clicks > 0 ? `(${clicks})` : ''}
+          <button className="primary-btn" onClick={() => onNavigate && onNavigate('blog')}>
+            View projects
           </button>
-          <p className="hero-note">
-            {clicks === 0
-              ? 'Try the button to see state updates in action.'
-              : `Button clicked ${clicks} time${clicks === 1 ? '' : 's'}.`}
-          </p>
+          <button className="primary-btn" onClick={handleClick}>
+            Say hi {clicks > 0 ? `(${clicks})` : ''}
+          </button>
         </div>
       </div>
       <div className="hero-image">
-        <img src={heroImg} alt="Illustration for React training" />
+        <img src={heroImg} alt="Illustration for portfolio" />
       </div>
     </section>
   )

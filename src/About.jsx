@@ -1,19 +1,23 @@
 const About = () => {
   return (
     <section className="page-card">
-      <h2>About this project</h2>
+      <h2>About Adisa</h2>
       <p>
-        This small React app shows how to build reusable components, switch pages,
-        and use local state for interactive UI.
+        I'm Adisa Elijah Abisola, a front-end developer with skills in HTML,
+        JavaScript, CSS, and React. I graduated from Ekiti State University with
+        a Second Class Upper degree in Computer Science.
       </p>
+      <h3>Skills</h3>
       <ul>
-        <li>Client-side navigation without a router</li>
-        <li>Responsive layout and polished styling</li>
-        <li>Component-driven design with React hooks</li>
+        <li>HTML5 & semantic markup</li>
+        <li>Modern JavaScript (ES6+)</li>
+        <li>Responsive CSS and layouts</li>
+        <li>React: components, hooks, state management</li>
       </ul>
+      <h3>What I’m looking for</h3>
       <p>
-        The project is built with Vite and ESLint so you can continue improving
-        it with new pages, API data, or routing.
+        Opportunities to build web applications, collaborate with teams, and
+        continue growing as a front-end engineer.
       </p>
     </section>
   )
